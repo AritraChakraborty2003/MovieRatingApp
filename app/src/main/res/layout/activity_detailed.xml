@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/mainHolder">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="Flicker Fusion"
+            android:textAlignment="center"
+            android:textSize="30dp"
+            android:layout_marginTop="10dp"
+            android:paddingTop="7dp"></TextView>
+     <ImageView
+         android:id="@+id/movieImg"
+         android:layout_width="match_parent"
+         android:layout_height="230dp"
+         android:layout_marginTop="20dp"></ImageView>
+        <TextView
+            android:id="@+id/titleDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:textSize="24dp"
+            android:fontFamily="sans-serif-condensed-medium"></TextView>
+        <TextView
+            android:id="@+id/RatingDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rating Till Now"
+            android:textSize="24dp"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif-condensed-medium"></TextView>
+        <TextView
+            android:id="@+id/OverviewDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Overview"
+            android:textSize="24dp"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif-light"></TextView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp">
+            <TextView
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                    android:text="Enter Rating"
+                android:textSize="20dp"
+                android:paddingLeft="5dp"
+                ></TextView>
+
+            <EditText
+                android:id="@+id/ratingInput"
+                android:layout_width="298dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="number"
+
+                android:hint="Enter your Rating"/>
+
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Add Rating"
+            android:id="@+id/ratingbtn"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp">
+        </Button>
+    </LinearLayout>
+
+</ScrollView>
